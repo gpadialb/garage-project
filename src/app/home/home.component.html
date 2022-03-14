@@ -1,0 +1,11 @@
+<div>
+    <app-filter
+        (filterEvent)="filter($event)"
+    ></app-filter>
+</div>
+<div>
+    <app-card-car
+        *ngFor="let car of cars" 
+        [carValue]="car">
+    </app-card-car>
+</div>

@@ -1,0 +1,10 @@
+<div class="card-car">
+    <div>
+        <h1 class="title-card-car">{{carValue.brand}} {{carValue.model}}</h1>
+        <h1 class="item-card-car">Year: {{carValue.year}}</h1>
+        <h1 class="item-card-car">Color: {{carValue.color}}</h1>
+        <h1 class="item-card-car">Price: $ {{carValue.price}}</h1>
+        <button class="edit-button" [routerLink]="['/edit/' + carValue.id]">Edit Car</button>
+        <button class="delete-button" (click)="delete()">Delete Car</button>
+    </div>
+</div>

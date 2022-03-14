@@ -1,0 +1,13 @@
+<div class="background-filter">
+    <div class="filter">
+        <p class="title">Find your car!</p>
+        <form class="form-filter" [formGroup]="filterForm">
+            <input class="input-filter" placeholder="Brand" formControlName="brand"  [(ngModel)]="filterValue.brand" required>
+            <input class="input-filter" placeholder="Model" formControlName="model"  [(ngModel)]="filterValue.model" required>
+            <input class="input-filter" placeholder="Year" formControlName="year"  [(ngModel)]="filterValue.year" required>
+            <input class="input-filter" placeholder="Color" formControlName="color"  [(ngModel)]="filterValue.color" required>
+            <input class="input-filter" placeholder="Price" formControlName="price"  [(ngModel)]="filterValue.price" required>
+            <button class="form-button" (click)="filter()"><span>Search</span></button>
+        </form>
+    </div>
+</div>

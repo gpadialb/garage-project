@@ -1,0 +1,44 @@
+.addFormComponent{
+    display: flex;
+    margin-top: 30px;
+}
+.addForm{
+    display: block;
+    margin: 0px auto;
+    max-width: 600px;
+    background-color: lightgray;
+    padding: 50px;
+    border-radius: 15px;
+}
+.title-cadd-car{
+    font-family: 'Montserrat', sans-serif;
+}
+.formLabel{
+    display: block;
+    font-style: sans-serif;
+    margin: 10px 0px 3px 0px;
+    color:rgb(0, 8, 54);
+
+}
+.formInput{
+    display: block;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 8, 54);;
+}
+.addFormButton{
+    display: block;
+    margin: 20px auto 0px auto;
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.addFormButton:hover{
+    background-color: rgb(0, 8, 54);
+    transition: 0.3s;
+ }
+ 

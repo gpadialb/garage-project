@@ -1,0 +1,16 @@
+<div class="addFormComponent">
+    <form class="addForm" [formGroup]="carForm">
+        <h1 class="title-cadd-car">Add New Car</h1>
+        <label class="formLabel">Brand</label>
+        <input class="formInput" type="text" formControlName="brand"  [(ngModel)]="car.brand" required>
+        <label class="formLabel">Model</label>
+        <input class="formInput" type="text" formControlName="model"  [(ngModel)]="car.model" required>
+        <label class="formLabel">Year</label>
+        <input class="formInput" type="number" formControlName="year"  [(ngModel)]="car.year" required>
+        <label class="formLabel">Color</label>
+        <input class="formInput" type="text" formControlName="color"  [(ngModel)]="car.color" required>
+        <label class="formLabel">Price</label>
+        <input class="formInput" type="number" formControlName="price"  [(ngModel)]="car.price" required>
+        <input class="addFormButton" type="button" value="New car" (click)="save()" [disabled]="!carForm.valid">
+    </form>
+</div>
